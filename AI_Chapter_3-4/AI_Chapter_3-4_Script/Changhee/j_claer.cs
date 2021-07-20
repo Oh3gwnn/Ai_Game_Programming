@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class j_claer : MonoBehaviour
+{
+    private GameObject portal;
+    private GameObject textui;
+    void Start()
+    {
+        portal = GameObject.FindWithTag("portal");
+        textui = GameObject.FindWithTag("cleartext");
+        portal.SetActive(false);
+        textui.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Cube")
+        {
+            Destroy(other.gameObject);
+            portal.SetActive(true);
+            textui.SetActive(true);
+        }
+    }
+}
