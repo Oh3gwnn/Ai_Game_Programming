@@ -6,4 +6,5 @@
 * AI_Chapter_3-4 추가
 
 **2021-08-01**
+* AI_Chapter_2 추가
 * AI_Chapter_5-6 추가
